@@ -11,6 +11,13 @@ CREATE TABLE IF NOT EXISTS User (
   phone INT,
   created_time datetime
 );
+CREATE TABLE IF NOT EXISTS Contact (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR NOT NULL,
+  title VARCHAR,
+  phone INT,
+  content Text
+);
 
 -- Tạo bảng Room nếu nó chưa tồn tại
 CREATE TABLE IF NOT EXISTS Room (
