@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/khutro/project2/hello-view.fxml"));
+         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/khutro/project2/contact.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1252.0, 608);
         stage.setTitle("Hello!");
         stage.setScene(scene);
