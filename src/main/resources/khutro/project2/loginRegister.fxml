@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khutro.project2.loginRegisterController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="550.0" prefWidth="375.0" styleClass="left-form" stylesheets="@LoginRegister.css">
+               <children>
+                  <ImageView fitHeight="195.0" fitWidth="215.0" layoutX="90.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/House.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="20.0" layoutY="317.0" text="Hostel Management System" textFill="#f7ffe5">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="login_form" layoutX="373.0" prefHeight="550.0" prefWidth="375.0" styleClass="white-bg" stylesheets="@LoginRegister.css" AnchorPane.leftAnchor="373.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="148.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="140.0" layoutY="136.0" text="Sign in" textFill="#a0c49d">
+                     <font>
+                        <Font name="Times New Roman Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="login_username" layoutX="72.0" layoutY="202.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <PasswordField fx:id="login_password" layoutX="74.0" layoutY="243.0" prefHeight="26.0" prefWidth="229.0" promptText="Password" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <TextField fx:id="login_showPassword" layoutX="73.0" layoutY="243.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" styleClass="textfield" stylesheets="@LoginRegister.css" visible="false" />
+                  <CheckBox fx:id="login_selectShowPassword" layoutX="72.0" layoutY="275.0" mnemonicParsing="false" onAction="#showPassword" text="Show password" textFill="#a0c49d">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Button fx:id="login_btn" layoutX="73.0" layoutY="326.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="230.0" styleClass="btn" stylesheets="@LoginRegister.css" text="Login" />
+                  <Label layoutX="152.0" layoutY="420.0" text="Register" textFill="#a0c49d">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="login_create" layoutX="72.0" layoutY="457.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="36.0" prefWidth="230.0" styleClass="btn" stylesheets="@LoginRegister.css" text="Create Account" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="signup_form" layoutX="373.0" prefHeight="550.0" prefWidth="375.0" styleClass="white-bg" stylesheets="@LoginRegister.css" visible="false">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="148.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="136.0" layoutY="112.0" text="Sign up" textFill="#a0c49d">
+                     <font>
+                        <Font name="Times New Roman Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signup_username" layoutX="72.0" layoutY="233.0" prefHeight="26.0" prefWidth="230.0" promptText="Username" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <Button fx:id="signup_btn" layoutX="73.0" layoutY="359.0" mnemonicParsing="false" onAction="#register" prefHeight="36.0" prefWidth="230.0" styleClass="btn" stylesheets="@LoginRegister.css" text="Sign up" />
+                  <Label layoutX="157.0" layoutY="429.0" text="Sign in" textFill="#a0c49d">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signup_login" layoutX="73.0" layoutY="461.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="36.0" prefWidth="230.0" styleClass="btn" stylesheets="@LoginRegister.css" text="Login Account" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="206.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Plus.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="signup_password" layoutX="72.0" layoutY="270.0" prefHeight="30.0" prefWidth="230.0" promptText="Password" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <PasswordField fx:id="signup_cPassword" layoutX="72.0" layoutY="307.0" prefHeight="30.0" prefWidth="230.0" promptText="Confirm password" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <TextField fx:id="signup_name" layoutX="72.0" layoutY="159.0" prefHeight="26.0" prefWidth="230.0" promptText="Name" styleClass="textfield" stylesheets="@LoginRegister.css" />
+                  <TextField fx:id="signup_phone" layoutX="72.0" layoutY="196.0" prefHeight="26.0" prefWidth="230.0" promptText="Phone number" styleClass="textfield" stylesheets="@LoginRegister.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
