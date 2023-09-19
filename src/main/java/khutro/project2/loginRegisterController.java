@@ -101,7 +101,7 @@ public class loginRegisterController implements Initializable {
     	if(login_username.getText().isEmpty() || login_password.getText().isEmpty()) {
             alert.errorMessage("Incorrect username or password");
     	}else {
-    		String selectData = "SELECT * FROM user WHERE " + "username = ? and password = ?";
+    		String selectData = "SELECT * FROM user1 WHERE " + "username = ? and password = ?";
     		
     		connect = connectDB();
     		
@@ -123,7 +123,7 @@ public class loginRegisterController implements Initializable {
         			alert.successMessage("You've signed up");
         			
         			//LINK TO DASHBOARD FORM
-        			Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        			Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         			Stage stage = new Stage();
         			Scene scene = new Scene(root);
         			
@@ -175,7 +175,7 @@ public class loginRegisterController implements Initializable {
         } else if (signup_password.getText().length() < 8) {
             alert.errorMessage("Invalid password, at least 8 characters needed");
         } else {
-            String checkUsername = "SELECT * FROM user WHERE username = ?";
+            String checkUsername = "SELECT * FROM user1 WHERE username = ?";
             Connection connect = connectDB();
 
             try {
@@ -186,7 +186,7 @@ public class loginRegisterController implements Initializable {
                 if (result.next()) {
                     alert.errorMessage(signup_username.getText() + " is already taken");
                 } else {
-                    String insertData = "INSERT INTO user "
+                    String insertData = "INSERT INTO user1 "
                             + "(name, phone, username, password, created_time) "
                             + "VALUES(?,?,?,?,?)";
 
