@@ -6,6 +6,7 @@ database\room.class
 database\Homecontroller.class
 model\UserModel.class
 dao\user\IUserDao.class
+helloviewcontroller.class
 khutro\project2\loginRegisterController.class
 khutro\project2\HelloController.class
 dao\user\UserDaoImpl.class

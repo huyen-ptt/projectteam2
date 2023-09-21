@@ -7,7 +7,7 @@
 <!--<?import javafx.scene.control.cell.PropertyValueFactory;?>-->
 
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="database.Homecontroller">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="database/Homecontroller">
 
 
     <!--<Label fx:id="nameLabel" text="Welcome to the Home Page" />-->
