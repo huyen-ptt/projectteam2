@@ -1,69 +1,42 @@
 package database;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
-import javafx.stage.Stage;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-public class Main extends Application {
+public class Main {
 
-    // Define GUI elements
-    TextField roomNumberField = new TextField();
-    TextField capacityField = new TextField();
-    Button addButton = new Button("Add Room");
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "";
+    private static final String DATABASE_NAME = "khutro";
+    
+    public static void main(String[] args)  {
 
-    @Override
-    public void start(Stage primaryStage) {
-        // Set up the UI
-        VBox root = new VBox(10);
-        root.getChildren().addAll(
-                new Label("Room Number:"),
-                roomNumberField,
-                new Label("Capacity:"),
-                capacityField,
-                addButton
-        );
+        try (Connection connection = DriverManager.getConnection(DB_URL + DATABASE_NAME, DB_USER, DB_PASSWORD)){
+            Statement stmt;
 
-        // Set up event handler for the button
-        addButton.setOnAction(e -> addRoom());
+//            Class.forName(JDBC_DRIVER);
+            System.out.println("Connecting to database...");
 
-        // Create the scene and set it on the stage
-        Scene scene = new Scene(root, 300, 200);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Add Room Information");
-        primaryStage.show();
-    }
+            System.out.println("Creating database...");
+            stmt = connection.createStatement();
 
-    private void addRoom() {
-        String roomNumber = roomNumberField.getText();
-        int capacity = Integer.parseInt(capacityField.getText());
-
-        try {
-            // Connect to the database
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/khutro", "username", "password");
-
-            // Create the SQL query
-            var insertQuery = "INSERT INTO room (id, room_name, room_description, price, max_occupancy, status, room_area, type, created_time) VALUES (1, 'a', 'a', 1, null, null, null, 'a', null)";
-            PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
-            preparedStatement.setString(1, roomNumber);
-            preparedStatement.setInt(2, capacity);
-
-            // Execute the query
-            preparedStatement.executeUpdate();
-
-            // Close the connection
-            connection.close();
-
-            // Provide feedback to the user
-            System.out.println("Room information added successfully.");
-        } catch (SQLException e) {
-            e.printStackTrace();
+            String sql = "INSERT INTO room " +
+                    "VALUES (1, 'a', 'a', 1, null, null, null, 'a', null)";
+            stmt.executeUpdate(sql);            
+            
+            System.out.println("Inserted records into the table...");
+            System.out.println("Insert data success");
+            
+        } catch(SQLException se){
         }
-    }
-
-    public static void main(String[] args) {
-        launch(args);
+        System.out.println("Done!");
     }
 }
+
+
+
+
+

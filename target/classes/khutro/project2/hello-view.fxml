@@ -113,7 +113,7 @@
                   <Text layoutX="158.0" layoutY="812.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acreage: 21m2" />
                   <Text layoutX="158.0" layoutY="838.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room rates: 2,2 million VND" />
                   <Text layoutX="157.0" layoutY="864.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furniture: air conditioner, hot and cold water, bed. There is a private bathroom." />
-                  <Text layoutX="155.0" layoutY="890.0.fxml " strokeType="OUTSIDE" strokeWidth="0.0" text="Status: full (2/2)" />
+                  <Text layoutX="155.0" layoutY="890.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: full (2/2)" />
                </children>
                <padding>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
@@ -121,9 +121,9 @@
                <opaqueInsets>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
                </opaqueInsets>
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
+<!--               <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>-->
                <effect>
                   <Blend />
                </effect>

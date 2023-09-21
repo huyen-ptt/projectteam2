@@ -11,7 +11,7 @@ public class ConnectionProvider implements AutoCloseable {
     private static final String DATABASE_NAME = "khutro";
 
     private Connection connection;
-
+//Connection connection = DriverManager.getConnection(DB_URL + DATABASE_NAME, DB_USER, DB_PASSWORD)
     public ConnectionProvider() {
         try {
             connection = DriverManager.getConnection(DB_URL + DATABASE_NAME, DB_USER, DB_PASSWORD);

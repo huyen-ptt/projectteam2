@@ -17,6 +17,37 @@
    <content>
       <AnchorPane>
          <children>
+            <AnchorPane layoutX="-4.0" layoutY="-1.0" prefHeight="70.0" prefWidth="614.0" style="-fx-background-color: #A0C49D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text cache="true" fill="#0aff75" layoutX="14.0" layoutY="40.0" lineSpacing="1.0" stroke="#17b945" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 3" textAlignment="CENTER" wrappingWidth="68.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+<!--         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.9210526347160339" green="0.03411306068301201" blue="0.03411306068301201" />
+               </color>
+            </InnerShadow>
+         </effect>-->
+      </Text>
+      <Hyperlink layoutX="117.0" layoutY="21.0" text="Home" textAlignment="CENTER" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="538.0" layoutY="22.0" text="Log in" textFill="#1e0101">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="197.0" layoutY="22.0" text="Contact" textFill="#0d0000">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>  
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="209.0" fitWidth="242.0" layoutX="14.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
@@ -72,46 +103,43 @@
       </Button>
       <Separator layoutY="70.0" prefHeight="2.0" prefWidth="601.0" />
       <Separator layoutY="416.0" prefHeight="2.0" prefWidth="601.0" />
-      <Text cache="true" fill="#0aff75" layoutX="22.0" layoutY="40.0" lineSpacing="1.0" stroke="#17b945" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 3" textAlignment="CENTER" wrappingWidth="68.0">
+<!--      <Text layoutX="245.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="connect with us">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color red="0.9210526347160339" green="0.03411306068301201" blue="0.03411306068301201" />
-               </color>
-            </InnerShadow>
-         </effect>
-      </Text>
-      <Text layoutX="120.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logo">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Text>
-      <Hyperlink layoutX="194.0" layoutY="21.0" text="Home" textAlignment="CENTER" textFill="#070000">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink layoutX="272.0" layoutY="21.0" text="Contact" textFill="#0d0000">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink layoutX="513.0" layoutY="21.0" text="Log in" textFill="#1e0101">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Hyperlink>
-      <Text layoutX="245.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="connect with us">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Text>
-      <Text layoutX="11.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a homestay-style room with a shared garage and an easy-going landlord. If you are interested or need help, contact me at the following number: 0999999999" wrappingWidth="600.0" />
+      </Text>-->
+<!--      <Text layoutX="11.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a homestay-style room with a shared garage and an easy-going landlord. If you are interested or need help, contact me at the following number: 0999999999" wrappingWidth="600.0" />
       <Text layoutX="11.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: Group3@gmail.com" />
-      <Text layoutX="506.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group 3." />
+      <Text layoutX="506.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group 3." />-->
+   </children>
+</AnchorPane>
+<AnchorPane layoutX="-5.0" layoutY="418.0" prefHeight="266.0" prefWidth="614.0" style="-fx-background-color: A0C49D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="418.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIÊN HỆ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="321.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebook: Group3" />
+      <Text layoutX="321.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail: Group3@gmail.com" />
+      <Text layoutX="463.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalo: 000000000" />
+      <Text layoutX="24.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cơ sở:  285 Đội Cấn Ba Đình Hà Nội" />
+      <Text fill="#e1ecc8" layoutX="13.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP" wrappingWidth="231.1367187499999">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text fill="#e1ecc8" layoutX="110.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="418.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIỚI THIỆU">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng trọ bình dân, giá cả phải chăng, phù hợp với các bạn sinh viên vừa ra trường. Môi trường yên tĩnh, xung quang có các kiến trúc cần thiết như siêu thị, ngân hàng... Liên hệ tôi theo phương pháp trên." textAlignment="JUSTIFY" wrappingWidth="286.7566223144531" />
    </children>
 </AnchorPane>
          </children>

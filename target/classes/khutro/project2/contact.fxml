@@ -17,7 +17,7 @@
    <content>
       <AnchorPane prefHeight="645.0" prefWidth="919.0">
          <children>
-             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="912.0" style="-fx-background-color: F7FFE5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane layoutX="-4.0" layoutY="-1.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #A0C49D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text cache="true" fill="#0aff75" layoutX="14.0" layoutY="40.0" lineSpacing="1.0" stroke="#17b945" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 3" textAlignment="CENTER" wrappingWidth="68.0">
          <font>
@@ -25,9 +25,9 @@
          </font>
          <effect>
             <InnerShadow>
-               <color>
-                  <!--<Color red="0.9210526347160339" green="0.03411306068301201" blue="0.03411306068301201" />-->
-               </color>
+<!--               <color>
+                  <Color red="0.9210526347160339" green="0.03411306068301201" blue="0.03411306068301201" />
+               </color>-->
             </InnerShadow>
          </effect>
       </Text>
@@ -36,7 +36,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="538.0" layoutY="22.0" text="Log in" textFill="#1e0101">
+      <Hyperlink layoutX="680.0" layoutY="22.0" text="Log in" textFill="#1e0101">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -47,16 +47,8 @@
          </font>
       </Hyperlink>
    </children>
-</AnchorPane> 
-            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="912.0" style="-fx-background-color: F7FFE5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <AnchorPane prefHeight="70.0" prefWidth="912.0" BorderPane.alignment="CENTER" />
-   </top>
-   <bottom>
-      <AnchorPane prefHeight="70.0" prefWidth="912.0" BorderPane.alignment="CENTER" />
-   </bottom>
-   <center>
-      <AnchorPane prefHeight="502.0" prefWidth="923.0" BorderPane.alignment="CENTER">
+</AnchorPane>            
+            <AnchorPane layoutX="-4.0" layoutY="80.0" prefHeight="502.0" prefWidth="750.0" BorderPane.alignment="CENTER">
          <children>
             <Text layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave a message" wrappingWidth="217.33673095703125">
                <font>
@@ -101,10 +93,39 @@
             <Text layoutX="60.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content" />
             <TextField layoutX="59.0" layoutY="198.0" prefHeight="35.0" prefWidth="390.0" promptText="Your contact phone" />
             <Text layoutX="60.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" wrappingWidth="82.13674926757812" />
+            
          </children>
       </AnchorPane>
-   </center>
-</BorderPane>
+ <AnchorPane layoutX="-5.0" layoutY="570.0" prefHeight="266.0" prefWidth="750.0" style="-fx-background-color: A0C49D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       
+      <Text layoutX="498.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIÊN HỆ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="411.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facebook: Group3" />
+      <Text layoutX="411.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail: Group3@gmail.com" />
+      <Text layoutX="590.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalo: 000000000" />
+      <Text layoutX="24.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cơ sở:  285 Đội Cấn Ba Đình Hà Nội" />
+      <Text fill="#e1ecc8" layoutX="13.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP" wrappingWidth="231.1367187499999">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text fill="#e1ecc8" layoutX="110.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="498.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIỚI THIỆU">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="400.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng trọ bình dân, giá cả phải chăng, phù hợp với các bạn sinh viên vừa ra trường. Môi trường yên tĩnh, xung quang có các kiến trúc cần thiết như siêu thị, ngân hàng... Liên hệ tôi theo phương pháp trên." textAlignment="JUSTIFY" wrappingWidth="286.7566223144531" />
+   </children>
+</AnchorPane>            
          </children>
       </AnchorPane>
    </content>
