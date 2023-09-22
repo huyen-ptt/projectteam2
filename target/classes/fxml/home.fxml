@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<!--<?import javafx.scene.control.cell.PropertyValueFactory;?>-->
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="database/Homecontroller">
+
+
+    <!--<Label fx:id="nameLabel" text="Welcome to the Home Page" />-->
+
+    <TableView fx:id="roomTable">
+        <columns>
+            <TableColumn text="Room name">
+                <cellValueFactory>
+                    <!--<PropertyValueFactory property="name" />-->
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="price">
+                <cellValueFactory>
+                    <!--<PropertyValueFactory property="price" />-->
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</VBox>
