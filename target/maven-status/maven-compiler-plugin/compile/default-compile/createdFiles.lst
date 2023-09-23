@@ -8,6 +8,7 @@ model\UserModel.class
 dao\user\IUserDao.class
 helloviewcontroller.class
 khutro\project2\loginRegisterController.class
+khutro\project2\contactController.class
 khutro\project2\HelloController.class
 dao\user\UserDaoImpl.class
 khutro\project2\alertMessage.class
